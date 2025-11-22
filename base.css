@@ -1,0 +1,283 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Variables de charte graphique */
+:root {
+    --primary: #c41e3a;
+    --secondary: #1a1a2e;
+    --accent: #ffd700;
+}
+
+/* Style du body */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e8eef2 100%);
+    color: #2c3e50;
+    transition: all 0.3s ease;
+    min-height: 100vh;
+}
+
+/* Checkbox  dark mode */
+#darkModeToggle {
+    display: none;
+}
+
+#darkModeToggle:checked ~ .wrapper {
+    background: linear-gradient(135deg, #0f0f1e 0%, #16213e 100%);
+}
+
+/* Conteneur principal */
+.wrapper {
+    min-height: 100vh;
+    transition: all 0.3s ease;
+}
+
+
+
+.header {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    padding: 1.5rem 2rem;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+#darkModeToggle:checked ~ .wrapper .header {
+    background: rgba(26, 26, 46, 0.95);
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--primary);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.nav-list a {
+    color: #2c3e50;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+    position: relative;
+}
+
+#darkModeToggle:checked ~ .wrapper .nav-list a {
+    color: #ecf0f1;
+}
+
+.nav-list a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--primary);
+    transition: width 0.3s;
+}
+
+.nav-list a:hover::after {
+    width: 100%;
+}
+
+
+.dark-mode-toggle {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+}
+
+.toggle-switch {
+    width: 50px;
+    height: 25px;
+    background: #ccc;
+    border-radius: 25px;
+    position: relative;
+    transition: background 0.3s;
+}
+
+#darkModeToggle:checked ~ .wrapper .toggle-switch {
+    background: var(--primary);
+}
+
+.toggle-slider {
+    width: 21px;
+    height: 21px;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    transition: transform 0.3s;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+#darkModeToggle:checked ~ .wrapper .toggle-slider {
+    transform: translateX(25px);
+}
+
+
+
+
+
+
+.main {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+    transition: all 0.3s ease;
+}
+
+#darkModeToggle:checked ~ .wrapper .main {
+    color: #ecf0f1;
+}
+
+
+
+
+
+
+
+
+
+
+/* ================================================
+   RESPONSIVE - TOUTES LES PAGES
+   ================================================ */
+
+@media (max-width: 968px) {
+    /* Hero */
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    /* Navigation */
+    .nav-list {
+        gap: 1rem;
+        font-size: 0.9rem;
+    }
+
+    /* Page accueil - Cartes */
+    .carte-container {
+        grid-template-columns: 1fr;
+    }
+
+    /* Header */
+    .header {
+        padding: 1rem;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .logo {
+        font-size: 1.5rem;
+    }
+
+    /* Grilles génériques */
+    .content-grid,
+    .content-grid-reverse,
+    .two-columns,
+    .three-images {
+        grid-template-columns: 1fr;
+    }
+
+    /* Titres */
+    .page-title {
+        font-size: 2rem;
+    }
+
+    /* Images hero */
+    .hero-image-container img {
+        height: 300px;
+    }
+
+    /* Page 3 - Timeline */
+    .timeline-circles {
+        flex-direction: column;
+    }
+
+    /* Page 3 - Stats */
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Page 3 - Mosaïque */
+    .mosaic-gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .mosaic-item.wide {
+        grid-column: span 1;
+    }
+
+    /* Page 3 - Asymétrique */
+    .asymmetric-section {
+        grid-template-columns: 1fr;
+    }
+
+    /* Page 3 - Citation */
+    .quote-text {
+        font-size: 1.5rem;
+    }
+
+    /* Page 4 - Profil */
+    .profile-hero {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .profile-stats {
+        justify-content: center;
+    }
+
+    /* Page 4 - Zigzag - SUPPRIMÉ
+    .zigzag-item {
+        grid-template-columns: 1fr;
+    }
+    */
+
+    /* Page 4 - Timeline verticale */
+    .timeline-track::before {
+        left: 20px;
+    }
+
+    .timeline-marker {
+        left: 20px;
+    }
+
+    .timeline-card {
+        width: calc(100% - 100px);
+        margin-left: 100px !important;
+    }
+
+    /* Page 4 - Contact */
+    .contact-methods {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-button {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+

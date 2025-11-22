@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="index.css">
+    <title>Judo - Accueil</title>
+
+</head>
+<body>
+    <input type="checkbox" id="darkModeToggle">
+    
+    <div class="wrapper">
+        <header class="header">
+            <div class="logo">🥋 JUDO</div>
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="http://127.0.0.1:5500/index.html">Accueil</a></li>
+                    <li><a href="page_1">Histoire</a></li>
+                    <li><a href="page_2">Techniques</a></li>
+                    <li><a href="champions">champions</a></li>
+                    <li><a href="#apropos">À propos</a></li>
+                    <li>
+                        <label for="darkModeToggle" class="dark-mode-toggle">
+                            <span class="toggle-label">🌙</span>
+                            <div class="toggle-switch">
+                                <div class="toggle-slider"></div>
+                            </div>
+                        </label>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="main">
+            <div class="hero">
+                <h1>JUDO</h1>
+                <p>Découvrez l'art martial japonais qui allie technique, discipline et respect</p>
+            </div>
+
+            <div class="carte-container">
+                <a href="#histoire" class="carte">
+                    <img src="Portrait_Mr._Kano.jpg" alt="Histoire du Judo" class="carte-image">
+                    <div class="carte-overlay">
+                        <h3 class="carte-title">Histoire du Judo</h3>
+                        <p class="carte-description">Plongez dans l'histoire fascinante du judo, de sa création par Jigoro Kano aux compétitions olympiques modernes.</p>
+                    </div>
+                </a>
+
+                <a href="#techniques" class="carte">
+                    <img src="image_technique.webp" alt="Techniques" class="carte-image">
+                    <div class="carte-overlay">
+                        <h3 class="carte-title">Techniques & Prises</h3>
+                        <p class="carte-description">Explorez les différentes techniques de projection, d'immobilisation et de soumission du judo traditionnel.</p>
+                    </div>
+                </a>
+
+                <a href="#champions" class="carte">
+                    <img src="images.jpg" alt="Champions" class="carte-image">
+                    <div class="carte-overlay">
+                        <h3 class="carte-title">Champions</h3>
+                        <p class="carte-description">Découvrez les plus grands champions de judo, leurs parcours exceptionnels et leurs exploits sur le tatami.</p>
+                    </div>
+                </a>
+
+                <a href="#apropos" class="carte">
+                    <img src="apropos.jpg" alt="À propos" class="carte-image">
+                    <div class="carte-overlay">
+                        <h3 class="carte-title">À propos</h3>
+                        <p class="carte-description">En savoir plus sur l'auteur de ce site, passionné de judo et des arts martiaux traditionnels japonais.</p>
+                    </div>
+                </a>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

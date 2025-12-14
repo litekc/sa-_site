@@ -32,7 +32,7 @@ Site web dédié à la découverte du judo, réalisé dans le cadre d'un projet 
 - ✅ **Galerie** : Affichage dynamique des images
 - ✅ **Navigation intuitive** : Menu fixe et liens inter-pages
 
-## 🛠️ Technologies utilisées
+## Technologies utilisées
 
 - **HTML5** : Structure sémantique
 - **CSS3** : Styling avancé avec Grid, Flexbox, animations

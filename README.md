@@ -1,6 +1,6 @@
-# 🥋 Site Web Judo - Projet BUT
+# Site Web Judo - Projet BUT
 
-## 📋 Description du projet
+## Description du projet
 
 Site web dédié à la découverte du judo, réalisé dans le cadre d'un projet académique de BUT (Bachelor Universitaire de Technologie). Ce site présente l'histoire, les techniques, les champions et les valeurs de cet art martial japonais.
 
@@ -24,13 +24,13 @@ Site web dédié à la découverte du judo, réalisé dans le cadre d'un projet 
 
 ### Caractéristiques techniques
 
-- ✅ **Mode sombre/clair** : Basculement fluide entre les thèmes
-- ✅ **Design responsive** : Compatible mobile, tablette et desktop
-- ✅ **Animations CSS** : Effets de survol, transitions et animations
-- ✅ **Cartes interactives** : Style Trading Card Game pour les champions
-- ✅ **Timeline circulaire** : Présentation chronologique des événements
-- ✅ **Galerie** : Affichage dynamique des images
-- ✅ **Navigation intuitive** : Menu fixe et liens inter-pages
+-  **Mode sombre/clair** : Basculement fluide entre les thèmes
+-  **Design responsive** : Compatible mobile, tablette et desktop
+-  **Animations CSS** : Effets de survol, transitions et animations
+-  **Cartes interactives** : Style Trading Card Game pour les champions
+-  **Timeline circulaire** : Présentation chronologique des événements
+-  **Galerie** : Affichage dynamique des images
+- **Navigation intuitive** : Menu fixe et liens inter-pages
 
 ## Technologies utilisées
 
@@ -39,7 +39,7 @@ Site web dédié à la découverte du judo, réalisé dans le cadre d'un projet 
 - **JavaScript** : Interactivité (mode sombre)
 - **Design** : Approche mobile-first
 
-## 📁 Structure du projet
+##  Structure du projet
 
 ```
 judo-site/
@@ -69,7 +69,7 @@ judo-site/
 ```
 
 
-## 📱 Responsive Design
+## Responsive Design
 
 Le site est optimisé pour tous les écrans :
 
@@ -77,7 +77,7 @@ Le site est optimisé pour tous les écrans :
 - **Tablette** : Adaptation des grilles (768px - 968px)
 - **Mobile** : Interface simplifiée (< 768px)
 
-## ✨ Fonctionnalités CSS avancées
+##  Fonctionnalités CSS avancées
 
 - **Grid Layout** : Grilles adaptatives pour les cartes
 - **Flexbox** : Alignement et disposition flexible

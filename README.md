@@ -3,7 +3,7 @@
 ## Description du projet
 
 Site web dédié à la découverte du judo, réalisé dans le cadre d'un projet académique de BUT (Bachelor Universitaire de Technologie). Ce site présente l'histoire, les techniques, les champions et les valeurs de cet art martial japonais.
-
+https://trello.com/invite/b/6914abc0058558e3a9ff51f3/ATTI010fa54b89eda0d966a600e7e51483318ABEB5C7/mon-tableau-trello
 ## Objectifs
 
 - Faire découvrir le judo aux débutants

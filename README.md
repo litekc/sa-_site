@@ -9,7 +9,8 @@ Site web dédié à la découverte du judo, réalisé dans le cadre d'un projet 
 ## lien vers le site 
  https://litekc.github.io/sa-_site/
 
-
+## lien vers le trello
+https://trello.com/invite/b/6914abc0058558e3a9ff51f3/ATTI010fa54b89eda0d966a600e7e51483318ABEB5C7/mon-tableau-trello
 
 
 ## Objectifs
